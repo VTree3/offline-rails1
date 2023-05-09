@@ -2,18 +2,23 @@
 <html>
   <head>
     <title>OfflineRails1</title>
+    <%= favicon_link_tag asset_path('nijikaicon.jpg')%>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
+    <%= render 'partials/header'%>
   <body>
-    <%= yield %>
-    <%= render 'partials/footer' %>
+    <div class="container-fluid main-container rounded pt-2 text-center">
+      <%= yield %>
+    </div>
   </body>
+    <%= render 'partials/footer' %>
 
 
 </html>

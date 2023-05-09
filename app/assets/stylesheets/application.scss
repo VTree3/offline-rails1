@@ -12,7 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap  
  */
+ 
+ @import "font-awesome";
 
  // Graphical variables
 @import "config/fonts";
@@ -23,11 +26,16 @@
 @import "bootstrap/scss/bootstrap";
 @import "components/index";
 
-* {
-    background-color: #232b2b;
-}
 
 
 .main-container {
-    padding: 20px;
+    background-color: #f8f9fa;
+    width: 100%;
 }
+
+
+* {
+    background-color: #f8f9fa;
+    
+}
+

@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+<h1 class = "fw-semibold"><%= @image.title%></h1>
+<div class = "image">
+<%= image_tag @image.image, style: "width: 300px; height: 300px"%>
+</div>
+<br>
+<h5><%= @image.description%></h5>
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

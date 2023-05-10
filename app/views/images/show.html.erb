@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 <h1 class = "fw-semibold"><%= @image.title%></h1>
-<div class = "image">
-<%= image_tag @image.image, style: "width: 300px; height: 300px"%>
+<div class = "image mx-auto">
+<%= image_tag @image.image, style: "width: 100%; max-width: 600px;"%>
 </div>
 <br>
 <h5><%= @image.description%></h5>
+<% if signed_in? %> 
 <%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<%= link_to 'Back to Masters', images_path %> |
+<%= link_to 'Back to Gallery', gallery_index_path %>
+<% else%>
+<%= link_to 'Back', gallery_index_path %>
+<%end%>

@@ -27,15 +27,12 @@
 @import "components/index";
 
 
-
-.main-container {
-    background-color: #f8f9fa;
-    width: 100%;
+.main-container { 
+	max-width: 1080px;
+	padding: 50px !important;
+	background-color: aliceblue;
+	margin: 0 auto !important; 
+	float: none !important; 
 }
 
-
-* {
-    background-color: #f8f9fa;
-    
-}
 

@@ -60,3 +60,7 @@ gem "font-awesome-sass", "~> 6.1"
 gem "jquery-rails", "~> 4.5"
 
 gem "bcrypt", "~> 3.1"
+
+gem "kaminari", "~> 1.2"
+
+gem "bootstrap5-kaminari-views", "~> 0.0.1"

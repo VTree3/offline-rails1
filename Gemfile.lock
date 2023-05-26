@@ -244,6 +244,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activestorage (~> 6.1)
   bcrypt (~> 3.1)
   bootsnap (>= 1.4.4)
   bootstrap5-kaminari-views (~> 0.0.1)

@@ -66,3 +66,5 @@ gem "kaminari", "~> 1.2"
 gem "bootstrap5-kaminari-views", "~> 0.0.1"
 
 gem "activestorage", "~> 6.1"
+
+gem "hotwire-rails", "~> 0.1.3"

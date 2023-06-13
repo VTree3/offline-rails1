@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tweets
   resources :users
   resources :images
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -7,5 +8,5 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   resources :gallery, only: [:index]
-  get 'offline', to: 'home#offline', as: :offline
+  get "/offline.html" => "home#offline"
 end

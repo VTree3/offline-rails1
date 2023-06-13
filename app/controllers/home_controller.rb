@@ -3,6 +3,6 @@ class HomeController < ApplicationController
         render 'index'
     end
     def offline
-        render 'offline', layout: false
+        render 'offline'
     end 
 end
